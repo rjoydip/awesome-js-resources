@@ -24,6 +24,7 @@
   "devDependencies": {
     "@preact/preset-vite": "^2.10.1",
     "@tanstack/react-router-devtools": "^1.115.2",
+    "std-env": "^3.9.0",
     "typescript": "~5.7.3",
     "vite": "^6.2.6",
     "vite-plugin-top-level-await": "^1.5.0"
