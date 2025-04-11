@@ -106,7 +106,7 @@ const indexRoute = createRoute({
 
 		if (import.meta.env.PROD) {
 			console.log(params)
-			let path = params["_splat"].replace('/awesome-js-resources/', '')
+			let path = params["_splat"] === 'awesome-js-resources' ? '' : params["_splat"]
 			console.log(path)
 			const baseURL =
 				"https://raw.githubusercontent.com/rjoydip/awesome-js-resources/refs/heads/main";
