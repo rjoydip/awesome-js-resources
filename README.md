@@ -4,7 +4,7 @@
 
 A collection of awesome [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) resources.
 
-# Table of contents
+## Table of contents
 
 - [Javascript](#javascript)
 - [Node.js](#nodejs)
@@ -15,12 +15,12 @@ A collection of awesome [JavaScript](https://developer.mozilla.org/en-US/docs/We
 ## Javascript
 
 - Videos
-	- [Create a Custom PDF Viewer With JavaScript](https://youtu.be/ydCSSgwZjzs?list=WL) :new:
-	- [Service Workers - The State of the Web](https://youtu.be/JYXXGNFJjwc?list=WL) :new:
-	- [Top-level Awaiting - Myles Borins](https://youtu.be/EERzGWgkU2o) :new:
-	- [The Async Await Episode | Promised (Angular Firebase)](https://youtu.be/vn3tm0quoqE?list=WL)
-	- [JavaScript Pro Tips - Code This, NOT That](https://youtu.be/Mus_vwhTCq0?list=WL)
-	- [The State of JavaScript - The State of the Web](https://www.youtube.com/watch?v=i5R7giitymk)
+  - [Create a Custom PDF Viewer With JavaScript](https://youtu.be/ydCSSgwZjzs?list=WL) :new:
+  - [Service Workers - The State of the Web](https://youtu.be/JYXXGNFJjwc?list=WL) :new:
+  - [Top-level Awaiting - Myles Borins](https://youtu.be/EERzGWgkU2o) :new:
+  - [The Async Await Episode | Promised (Angular Firebase)](https://youtu.be/vn3tm0quoqE?list=WL)
+  - [JavaScript Pro Tips - Code This, NOT That](https://youtu.be/Mus_vwhTCq0?list=WL)
+  - [The State of JavaScript - The State of the Web](https://www.youtube.com/watch?v=i5R7giitymk)
   - [Crockford on JavaScript - Act III: Function the Ultimate](https://www.youtube.com/watch?v=ya4UHuXNygM)
   - [Optional Chaining operator](https://www.youtube.com/watch?v=FKRVqtP8o48)
   - [V8 Internals for JavaScript Developers (Make Your JavaScript Faster)](https://www.youtube.com/watch?v=EhpmNyR2Za0)
@@ -66,18 +66,18 @@ A collection of awesome [JavaScript](https://developer.mozilla.org/en-US/docs/We
   - [Parcel ...the Webpack KILLER?!](https://www.youtube.com/watch?v=b-6BeS-22yw)
   - [Is async / await useless?](https://www.youtube.com/watch?v=ho5PnBOoacw)
   - [A Brief History of JavaScript by the Creator of JavaScript](https://www.youtube.com/watch?v=3-9fnjzmXWA)
-	- [Keep Betting on JavaScript](https://www.youtube.com/watch?v=ixzK0jqLO70)
-	- [Simply React](https://www.youtube.com/watch?v=Yez-7RMWMHI)
-	- [Async JS Crash Course - Callbacks, Promises, Async Await => (Traversy Media)](https://www.youtube.com/watch?v=PoRJizFvM7s)
-	- [What is Event Delegation? - JavaScript DOM Tutorial](https://www.youtube.com/watch?v=pKzf80F3O0U)
-	- [JavaScript Engines: A Tale of Types, Classes, and Maps](https://www.youtube.com/watch?v=7ljt-D99IWc)
-	- [JavaScript Tutorial - "unload" event | Detect when the browser window has closed](https://www.youtube.com/watch?v=-RHZW6q2dLM)
-	- [Custom Events in Javascript](https://www.youtube.com/watch?v=b469-2H9Rew)
+    - [Keep Betting on JavaScript](https://www.youtube.com/watch?v=ixzK0jqLO70)
+    - [Simply React](https://www.youtube.com/watch?v=Yez-7RMWMHI)
+    - [Async JS Crash Course - Callbacks, Promises, Async Await => (Traversy Media)](https://www.youtube.com/watch?v=PoRJizFvM7s)
+    - [What is Event Delegation? - JavaScript DOM Tutorial](https://www.youtube.com/watch?v=pKzf80F3O0U)
+    - [JavaScript Engines: A Tale of Types, Classes, and Maps](https://www.youtube.com/watch?v=7ljt-D99IWc)
+    - [JavaScript Tutorial - "unload" event | Detect when the browser window has closed](https://www.youtube.com/watch?v=-RHZW6q2dLM)
+    - [Custom Events in Javascript](https://www.youtube.com/watch?v=b469-2H9Rew)
   - [What is the DOMParser?](https://www.youtube.com/watch?v=mW34Gc9c6JY)
-	- [What is Babel and why you need it? Introduction to Babel 7](https://www.youtube.com/watch?v=yLrNwo4wXOs)
+    - [What is Babel and why you need it? Introduction to Babel 7](https://www.youtube.com/watch?v=yLrNwo4wXOs)
   - [What is the XMLSerializer?](https://www.youtube.com/watch?v=ViAqTyz5HHs)
   - [Big JavaScript Projects - Code Sharing](https://www.youtube.com/watch?v=MflUMIeADZU)
-	- [Text To Speech & Synthesis App - JavaScript & Web Speech API](https://www.youtube.com/watch?v=ZORXxxP49G8)
+    - [Text To Speech & Synthesis App - JavaScript & Web Speech API](https://www.youtube.com/watch?v=ZORXxxP49G8)
   - [Array flat() method in JavaScript! - New in Chrome 69](https://www.youtube.com/watch?v=vPnn_QZGKIY)
   - [JS "this" and Function References - What is it all about?](https://www.youtube.com/watch?v=Pv9flm-80vM)
 - Blog
@@ -90,25 +90,25 @@ A collection of awesome [JavaScript](https://developer.mozilla.org/en-US/docs/We
   - [ES proposal: BigInt – arbitrary precision integers](http://2ality.com/2017/03/es-integer.html)
   - [S.O.L.I.D The first 5 principles of Object Oriented Design with JavaScript](https://medium.com/@cramirez92/s-o-l-i-d-the-first-5-priciples-of-object-oriented-design-with-javascript-790f6ac9b9fa)
   - [Understanding JavaScript Proxies](https://www.atyantik.com/proxy-javascript-es6-feature/)
-	- [Async Generators as an alternative to State Management](https://medium.com/dailyjs/async-generators-as-an-alternative-to-state-management-f9871390ffca)
-	- [Learn ES5](http://speakingjs.com/es5/)
-	- [JavaScript async/await: The Good Part, Pitfalls and How to Use](https://hackernoon.com/javascript-async-await-the-good-part-pitfalls-and-how-to-use-9b759ca21cda)
+    - [Async Generators as an alternative to State Management](https://medium.com/dailyjs/async-generators-as-an-alternative-to-state-management-f9871390ffca)
+    - [Learn ES5](http://speakingjs.com/es5/)
+    - [JavaScript async/await: The Good Part, Pitfalls and How to Use](https://hackernoon.com/javascript-async-await-the-good-part-pitfalls-and-how-to-use-9b759ca21cda)
 - Github
   - [Learn-Node: wesbos](https://github.com/wesbos/Learn-Node)
   - [Api Cheatsheet Array](https://gist.github.com/rauschma/f7b96b8b7274f2e2d8dab899803346c3)
   - [Array iteration methods summarized](https://gist.github.com/mrmartineau/9e39954c0afe02f53b4c0c7814bc601b)
   - [30secondsofcode.org](https://30secondsofcode.org/index)
-	- [JS Memory](https://gist.github.com/justinbmeyer/4662050)
+    - [JS Memory](https://gist.github.com/justinbmeyer/4662050)
   - [Map/Reduce/Filter/Find Vs For loop Vs For each Vs Lodash vs Ramda](https://github.com/dg92/Performance-Analysis-JS)
     - [large data set result](https://raw.githubusercontent.com/dg92/Performance-Analysis-JS/master/large_data_set_result.png)
-		- [mid data set result](https://raw.githubusercontent.com/dg92/Performance-Analysis-JS/master/mid_data_set_result.png)
-		- [small data set result](https://raw.githubusercontent.com/dg92/Performance-Analysis-JS/master/small_data_set_result.png)
+      - [mid data set result](https://raw.githubusercontent.com/dg92/Performance-Analysis-JS/master/mid_data_set_result.png)
+      - [small data set result](https://raw.githubusercontent.com/dg92/Performance-Analysis-JS/master/small_data_set_result.png)
 - Others
   - [oclif (The Open CLI Framework)](https://oclif.io)
   - [BigInt: Arbitrary precision integers in JavaScript](https://github.com/tc39/proposal-bigint)
   - [30 seconds of code](https://30secondsofcode.org/index)
   - [30 seconds of interview](https://30secondsofinterviews.org)
-	- [Js framework benchmark](https://rawgit.com/krausest/js-framework-benchmark/master/webdriver-ts-results/table.html)
+    - [Js framework benchmark](https://rawgit.com/krausest/js-framework-benchmark/master/webdriver-ts-results/table.html)
 - [Examples](/examples/js/readme.md)
 
 ## Node.js
@@ -143,7 +143,7 @@ A collection of awesome [JavaScript](https://developer.mozilla.org/en-US/docs/We
   - [NEW Debugger Features for JavaScript](https://www.youtube.com/watch?v=foDOYyWNg3I&feature=push-u-sub&attr_tag=a8f3DsvY4nqcY3K--6)
   - [Modern Web APIs with Node.js & TypeScript | Manuel Rauber at iJS 2017](https://www.youtube.com/watch?v=2ToXwB9NqZY)
   - [The Future Is SERVERLESS: What That Means For NODE JS](https://www.youtube.com/watch?v=s8QMUlL3Qf4)
-	- [Intro To Web Scraping With Node.js & Cheerio](https://www.youtube.com/watch?v=LoziivfAAjE)
+    - [Intro To Web Scraping With Node.js & Cheerio](https://www.youtube.com/watch?v=LoziivfAAjE)
   - [Managing Multiple Threads In Node JS 🧵 | OPTIMIZING NODE JS](https://www.youtube.com/watch?v=W0go0ve1XE0)
   - [The Complete Node js: The Node js Event Loop](https://www.youtube.com/watch?v=6YgsqXlUoTM&t=508s)
   - [Managing The Event Loop Phases ⭕️ | OPTIMIZING NODE JS](https://www.youtube.com/watch?v=ol56smloW2Q)
@@ -154,8 +154,8 @@ A collection of awesome [JavaScript](https://developer.mozilla.org/en-US/docs/We
 
 - Interview Questions
     Videos
-  	- [HARDEST JavaScript Interview Question Ever! Part 1](https://www.youtube.com/watch?v=BeHj9UOuUZ0)
-  	- [setTimeout + Closures Interview Question 🔥 | Namaste 🙏 JavaScript Ep. 11](https://www.youtube.com/watch?v=eBTBG4nda2A)
+  - [HARDEST JavaScript Interview Question Ever! Part 1](https://www.youtube.com/watch?v=BeHj9UOuUZ0)
+  - [setTimeout + Closures Interview Question 🔥 | Namaste 🙏 JavaScript Ep. 11](https://www.youtube.com/watch?v=eBTBG4nda2A)
 - Github
   - [You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS)
   - [Functional-Light-JS](https://github.com/getify/Functional-Light-JS)
@@ -191,14 +191,14 @@ A collection of awesome [JavaScript](https://developer.mozilla.org/en-US/docs/We
 - Shared
   - [Short Imports with TypeScript Path Mapping](https://www.youtube.com/watch?v=1FOfL6bDSF4)
   - [NgConf and the Exciting Future of Angular](https://www.youtube.com/embed/V0HW6h0Jzog?start=56&end=213)
-	- [Demystifying Ahead-Of-Time Compilation In Angular](http://slides.com/wassimchegham/demystifying-ahead-of-time-compilation-in-angular-2-aot-jit)
+    - [Demystifying Ahead-Of-Time Compilation In Angular](http://slides.com/wassimchegham/demystifying-ahead-of-time-compilation-in-angular-2-aot-jit)
 - Angular 6
   - [Angular 6 - What To Expect](https://www.youtube.com/watch?v=XW7_jhrUNmM)
   - [Angular Elements Quick Start](https://www.youtube.com/watch?v=4u9_kdkvTsc)
   - [Elements in v6 and Beyond - Rob Wormald](https://www.youtube.com/watch?v=Z1gLFPLVJjY)
   - [Angular 6 Upgrade - Breaking Changes & Features - What's New?(Academind)](https://www.youtube.com/watch?v=Xr5l7lT--YU)
   - [Angular Elements Introduction & Walkthrough[Academind]](https://www.youtube.com/watch?v=y73NMviRoPY)
-	- [Angular - "routerLink" vs "href" and Losing State](https://www.youtube.com/watch?v=RrJ5tpvkSFI)
+    - [Angular - "routerLink" vs "href" and Losing State](https://www.youtube.com/watch?v=RrJ5tpvkSFI)
 
 ## JSConf
 
@@ -219,7 +219,7 @@ A collection of awesome [JavaScript](https://developer.mozilla.org/en-US/docs/We
   - [Asynchrony: Under the Hood - Shelley Vohr](https://www.youtube.com/watch?v=SrNQS8J67zc)
 
 - JSConf.Asia 2018
-	- [Jake Archibald: In The Loop](https://youtu.be/cCOL7MC4Pl0?list=WL) :new:
+  - [Jake Archibald: In The Loop](https://youtu.be/cCOL7MC4Pl0?list=WL) :new:
 
 ## Others
 
@@ -231,7 +231,7 @@ A collection of awesome [JavaScript](https://developer.mozilla.org/en-US/docs/We
 - [Ionic 4 Theme Builder with CSS Variables](https://www.youtube.com/watch?v=RVh6nngPuNw&feature=youtu.be)
 - [Rise Above The Framework](https://www.youtube.com/watch?v=HiE7FmIKOQ0)
 
-**License**
+### License
 
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 

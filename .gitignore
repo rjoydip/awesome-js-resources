@@ -9,7 +9,7 @@ lcov.info
 *.gz
 
 logs
-build
+dist
 
 node_modules
 docs
