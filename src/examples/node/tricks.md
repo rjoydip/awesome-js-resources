@@ -5,7 +5,7 @@
 ```js
 // example.js
 module.exports = function(param) {
-    console.log("Param 1", param); 
+    console.log("Param 1", param);
     return function(nesParam) {
         console.log("Param 2", nesParam)
     }

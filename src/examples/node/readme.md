@@ -1,6 +1,6 @@
 # Examples
 
-- class export
+## Class export
 
 ```js
 // class-export.js
@@ -22,7 +22,7 @@ const Self = require('./class-export')()
 
 Source: [class-export.js](/examples/node/class-export.js#L1)
 
-- cluster (load balancing)
+## Cluster (load balancing)
 
 ```js
 const cluster = require('cluster');
@@ -78,9 +78,9 @@ if (cluster.isMaster) {
 
 Source: [cluster.js](/examples/node/cluster.js#L1)
 
-> NOTE: Kill a process in `windows`: `> Taskkill /PID <PROCESS_ID> /F` and for `linux`: `$ kill -9 <PROCESS_ID>`
+> [!NOTE] Kill a process in `windows`: `> Taskkill /PID <PROCESS_ID> /F` and for `linux`: `$ kill -9 <PROCESS_ID>`
 
-- node proxy server
+## Node proxy server
 
 ```js
 var http = require('http'),
