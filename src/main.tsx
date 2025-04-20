@@ -103,8 +103,9 @@ const indexRoute = createRoute({
 		}
 
 		if (import.meta.env.PROD) {
-			const baseURL =
-				"https://raw.githubusercontent.com/rjoydip/awesome-js-resources/refs/heads/main";
+			console.log('>>>>', new URL(import.meta.url).href)
+			// const baseURL = "https://raw.githubusercontent.com/rjoydip/awesome-js-resources/refs/heads/main";
+			const baseURL = new URL(import.meta.url).href
 			filePath = params["_splat"] !== ""
 				? `${baseURL}/src/${params["_splat"]}`
 				: `${baseURL}/README.md`;
