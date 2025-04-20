@@ -94,13 +94,19 @@ const indexRoute = createRoute({
 	getParentRoute: () => rootRoute,
 	path: "*",
 	loader: async ({ params }: any) => {
-		const path = params['_splat'] === "" ? '/README.md': `/src/${params['_splat'].replace('/awesome-js-resources', '/')}`
+		const param = params["_splat"];
+		console.log(">>>> [params]: ", params);
 		const filePath = import.meta.env.PROD
-			? `https://raw.githubusercontent.com/rjoydip/awesome-js-resources/refs/heads/main/${path}`
-			: path;
+			? `https://raw.githubusercontent.com/rjoydip/awesome-js-resources/refs/heads/main/${
+				param === "awesome-js-resources"
+					? "/README.md"
+					: `/src/${param.replace("awesome-js-resources", "/")}`
+			}`
+			: param === ""
+			? "/README.md"
+			: param;
 
 		console.log(">>>> [filePath]: ", filePath);
-		console.log(">>>> [params]: ", params);
 
 		try {
 			if (filePath) {
