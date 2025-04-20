@@ -20,7 +20,6 @@ import theme from "@shikijs/themes/vitesse-light";
 import { BuiltinLanguage } from "shiki";
 
 import "remark-gh-alerts/styles/github-colors-light.css";
-import { PROD_BASE_URL } from "./constant";
 
 const highlighter = await createHighlighterCore({
 	langs: [
@@ -28,7 +27,7 @@ const highlighter = await createHighlighterCore({
 		import("@shikijs/langs/typescript"),
 	],
 	themes: [
-		import('@shikijs/themes/vitesse-light'),
+		import("@shikijs/themes/vitesse-light"),
 	],
 	engine: createJavaScriptRegexEngine(),
 });
@@ -72,13 +71,13 @@ export function Renderer(
 			/>
 		);
 	} else {
-		const html = highlighter.codeToHtml(content ?? '', {
+		const html = highlighter.codeToHtml(content ?? "", {
 			lang,
 			themes: {
-				light: 'vitesse-light'
+				light: "vitesse-light",
 			},
-		})
-		return <div dangerouslySetInnerHTML={{ __html: html }}/>
+		});
+		return <div dangerouslySetInnerHTML={{ __html: html }} />;
 	}
 }
 
@@ -95,16 +94,13 @@ const indexRoute = createRoute({
 	getParentRoute: () => rootRoute,
 	path: "*",
 	loader: async ({ params }: any) => {
-		const path = import.meta.env.BASE_URL.replace(PROD_BASE_URL, '')
-		const baseURL = import.meta.env.PROD ? 'https://raw.githubusercontent.com/rjoydip/awesome-js-resources/refs/heads/main': import.meta.env.BASE_URL;
-		const filePath = path !== ""
-			? `${baseURL}/src/${path}`
-			: `${baseURL}/README.md`;
+		const path = params['_splat'] === "" ? '/README.md': `/src/${params['_splat'].replace('/awesome-js-resources', '/')}`
+		const filePath = import.meta.env.PROD
+			? `https://raw.githubusercontent.com/rjoydip/awesome-js-resources/refs/heads/main/${path}`
+			: path;
 
-		console.log('>>>> [path]: ', path)
-		console.log('>>>> [filePath]: ', filePath)
-		console.log('>>>> [params]: ', params)
-		console.log('>>>> [baseURL]: ', baseURL)
+		console.log(">>>> [filePath]: ", filePath);
+		console.log(">>>> [params]: ", params);
 
 		try {
 			if (filePath) {
