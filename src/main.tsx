@@ -96,10 +96,12 @@ const indexRoute = createRoute({
 	loader: async ({ params }: any) => {
 		let filePath;
 
+		console.log(params)
+
 		if (import.meta.env.DEV) {
 			filePath = params["_splat"] !== ""
 				? `/src/${params["_splat"]}`
-				: `/readme.md`;
+				: `/README.md`;
 		}
 
 		if (import.meta.env.PROD) {
