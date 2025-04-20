@@ -96,8 +96,6 @@ const indexRoute = createRoute({
 	loader: async ({ params }: any) => {
 		let filePath;
 
-		console.log(params)
-
 		if (import.meta.env.DEV) {
 			filePath = params["_splat"] !== ""
 				? `/src/${params["_splat"]}`
@@ -105,12 +103,12 @@ const indexRoute = createRoute({
 		}
 
 		if (import.meta.env.PROD) {
-			console.log('>>>>', new URL(import.meta.url).href)
-			// const baseURL = "https://raw.githubusercontent.com/rjoydip/awesome-js-resources/refs/heads/main";
-			const baseURL = new URL(import.meta.url).href
+			const baseURL = "https://raw.githubusercontent.com/rjoydip/awesome-js-resources/refs/heads/main";
 			filePath = params["_splat"] !== ""
 				? `${baseURL}/src/${params["_splat"]}`
 				: `${baseURL}/README.md`;
+
+			console.log('>>>>', filePath)
 		}
 
 		try {
