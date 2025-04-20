@@ -20,6 +20,7 @@ import theme from "@shikijs/themes/vitesse-light";
 import { BuiltinLanguage } from "shiki";
 
 import "remark-gh-alerts/styles/github-colors-light.css";
+import { PROD_BASE_URL } from "./constant";
 
 const highlighter = await createHighlighterCore({
 	langs: [
@@ -96,14 +97,14 @@ const indexRoute = createRoute({
 	loader: async ({ params }: any) => {
 		let filePath;
 
-		console.log('>>>>', params, import.meta.env.BASE_URL)
-
-		const baseURL = import.meta.env.PROD ? `https://raw.githubusercontent.com/rjoydip/awesome-js-resources/refs/heads/main/`: import.meta.env.BASE_URL;
+		const baseURL = import.meta.env.PROD ? `https://raw.githubusercontent.com/rjoydip/awesome-js-resources/refs/heads/main${import.meta.env.BASE_URL.replace(PROD_BASE_URL, '')}`: import.meta.env.BASE_URL;
 		filePath = params["_splat"] !== ""
-			? `${baseURL}src/${params["_splat"]}`
-			: `${baseURL}README.md`;
+			? `${baseURL}/src/${params["_splat"]}`
+			: `${baseURL}/README.md`;
 
-		console.log('>>>>', filePath)
+		console.log('>>>> [filePath]: ', filePath)
+		console.log('>>>> [params]: ', params)
+		console.log('>>>> [baseURL]: ', baseURL)
 
 		try {
 			if (filePath) {
