@@ -95,13 +95,13 @@ const indexRoute = createRoute({
 	getParentRoute: () => rootRoute,
 	path: "*",
 	loader: async ({ params }: any) => {
-		let filePath;
-
-		const baseURL = import.meta.env.PROD ? `https://raw.githubusercontent.com/rjoydip/awesome-js-resources/refs/heads/main${import.meta.env.BASE_URL.replace(PROD_BASE_URL, '')}`: import.meta.env.BASE_URL;
-		filePath = params["_splat"] !== ""
-			? `${baseURL}/src/${params["_splat"]}`
+		const path = import.meta.env.BASE_URL.replace(PROD_BASE_URL, '')
+		const baseURL = import.meta.env.PROD ? 'https://raw.githubusercontent.com/rjoydip/awesome-js-resources/refs/heads/main': import.meta.env.BASE_URL;
+		const filePath = path !== ""
+			? `${baseURL}/src/${path}`
 			: `${baseURL}/README.md`;
 
+		console.log('>>>> [path]: ', path)
 		console.log('>>>> [filePath]: ', filePath)
 		console.log('>>>> [params]: ', params)
 		console.log('>>>> [baseURL]: ', baseURL)
