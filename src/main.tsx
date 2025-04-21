@@ -13,6 +13,7 @@ import Markdown from "react-markdown";
 import remarkGemoji from "remark-gemoji";
 import remarkGithubAlerts from "remark-gh-alerts";
 import remarkGfm from "remark-gfm";
+import remarkReferenceLinks from "remark-reference-links";
 import rehypeShikiFromHighlighter from "@shikijs/rehype/core";
 import { createHighlighterCore } from "shiki/core";
 import { createJavaScriptRegexEngine } from "shiki/engine/javascript";
@@ -62,6 +63,7 @@ export function Renderer(
 					remarkGfm,
 					remarkGemoji,
 					remarkGithubAlerts,
+					remarkReferenceLinks,
 				]}
 				rehypePlugins={[
 					[rehypeShikiFromHighlighter, highlighter, {
@@ -98,13 +100,13 @@ const indexRoute = createRoute({
 		console.log(">>>> [params]: ", params);
 		const filePath = import.meta.env.PROD
 			? `https://raw.githubusercontent.com/rjoydip/awesome-js-resources/refs/heads/main/${
-				param === "awesome-js-resources"
+				param === "awesome-js-resources" || param === ""
 					? "/README.md"
 					: `/src/${param.replace("awesome-js-resources", "/")}`
 			}`
 			: param === ""
 			? "/README.md"
-			: param;
+			: `/src/${param}`;
 
 		console.log(">>>> [filePath]: ", filePath);
 
