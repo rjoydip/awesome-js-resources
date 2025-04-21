@@ -12,6 +12,7 @@
         "remark-gemoji": "^8.0.0",
         "remark-gfm": "^4.0.1",
         "remark-gh-alerts": "^0.0.3",
+        "remark-reference-links": "^7.0.0",
         "shiki": "^3.2.2",
       },
       "devDependencies": {
@@ -507,6 +508,8 @@
     "remark-gh-alerts": ["remark-gh-alerts@0.0.3", "", { "dependencies": { "unist-util-visit": "^5.0.0" }, "peerDependencies": { "@types/mdast": "^4.0.3", "unified": "^11.0.4" } }, "sha512-c+LiDARwwUnDN60dSlQDV4hoGFDrtkTdZZ6F2r0f5BANLejLNP1ywZIzQTWfN+fTwyGHp+O3wjXqK1QVtmVBRQ=="],
 
     "remark-parse": ["remark-parse@11.0.0", "", { "dependencies": { "@types/mdast": "^4.0.0", "mdast-util-from-markdown": "^2.0.0", "micromark-util-types": "^2.0.0", "unified": "^11.0.0" } }, "sha512-FCxlKLNGknS5ba/1lmpYijMUzX2esxW5xQqjWxw2eHFfS2MSdaHVINFmhjo+qN1WhZhNimq0dZATN9pH0IDrpA=="],
+
+    "remark-reference-links": ["remark-reference-links@7.0.0", "", { "dependencies": { "@types/mdast": "^4.0.0", "unist-util-visit": "^5.0.0" } }, "sha512-OMACEps7CkpBio5nutUToCcXFJr9QkkoHdku41iIholMdFZ0jdRxgFmPm2B7R+DSvW83ZShdA3ubWTH+C3M6Eg=="],
 
     "remark-rehype": ["remark-rehype@11.1.2", "", { "dependencies": { "@types/hast": "^3.0.0", "@types/mdast": "^4.0.0", "mdast-util-to-hast": "^13.0.0", "unified": "^11.0.0", "vfile": "^6.0.0" } }, "sha512-Dh7l57ianaEoIpzbp0PC9UKAdCSVklD8E5Rpw7ETfbTl3FqcOOgq5q2LVDhgGCkaBv7p24JXikPdvhhmHvKMsw=="],
 
