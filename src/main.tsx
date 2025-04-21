@@ -21,6 +21,7 @@ import theme from "@shikijs/themes/vitesse-light";
 import { BuiltinLanguage } from "shiki";
 
 import "remark-gh-alerts/styles/github-colors-light.css";
+import remarkLinkModifier from "./plugins/remark-link-modifier";
 
 const highlighter = await createHighlighterCore({
 	langs: [
@@ -64,6 +65,12 @@ export function Renderer(
 					remarkGemoji,
 					remarkGithubAlerts,
 					remarkReferenceLinks,
+					[remarkLinkModifier, {
+						addBaseUrl: true,
+						normalizeInternal: true,
+						removeTrailingSlash: true,
+						baseUrl: window.location.href.slice(0, -1),
+					}],
 				]}
 				rehypePlugins={[
 					[rehypeShikiFromHighlighter, highlighter, {
