@@ -107,7 +107,7 @@ const indexRoute = createRoute({
 		console.log(">>>> [params]: ", params);
 		const filePath = import.meta.env.PROD
 			? `https://raw.githubusercontent.com/rjoydip/awesome-js-resources/refs/heads/main/${
-				param === "awesome-js-resources" || param === ""
+				param === ""
 					? "/README.md"
 					: `/src/${param.replace("awesome-js-resources", "/")}`
 			}`
