@@ -13,6 +13,7 @@ import Markdown from "react-markdown";
 import remarkGemoji from "remark-gemoji";
 import remarkGithubAlerts from "remark-gh-alerts";
 import remarkGfm from "remark-gfm";
+import remarkReferenceLinks from "remark-reference-links";
 import rehypeShikiFromHighlighter from "@shikijs/rehype/core";
 import { createHighlighterCore } from "shiki/core";
 import { createJavaScriptRegexEngine } from "shiki/engine/javascript";
@@ -27,7 +28,7 @@ const highlighter = await createHighlighterCore({
 		import("@shikijs/langs/typescript"),
 	],
 	themes: [
-		import('@shikijs/themes/vitesse-light'),
+		import("@shikijs/themes/vitesse-light"),
 	],
 	engine: createJavaScriptRegexEngine(),
 });
@@ -62,6 +63,7 @@ export function Renderer(
 					remarkGfm,
 					remarkGemoji,
 					remarkGithubAlerts,
+					remarkReferenceLinks,
 				]}
 				rehypePlugins={[
 					[rehypeShikiFromHighlighter, highlighter, {
@@ -71,13 +73,13 @@ export function Renderer(
 			/>
 		);
 	} else {
-		const html = highlighter.codeToHtml(content ?? '', {
+		const html = highlighter.codeToHtml(content ?? "", {
 			lang,
 			themes: {
-				light: 'vitesse-light'
+				light: "vitesse-light",
 			},
-		})
-		return <div dangerouslySetInnerHTML={{ __html: html }}/>
+		});
+		return <div dangerouslySetInnerHTML={{ __html: html }} />;
 	}
 }
 
@@ -94,26 +96,19 @@ const indexRoute = createRoute({
 	getParentRoute: () => rootRoute,
 	path: "*",
 	loader: async ({ params }: any) => {
-		let filePath;
+		const param = params["_splat"];
+		console.log(">>>> [params]: ", params);
+		const filePath = import.meta.env.PROD
+			? `https://raw.githubusercontent.com/rjoydip/awesome-js-resources/refs/heads/main/${
+				param === ""
+					? "/README.md"
+					: `/src/${param.replace("awesome-js-resources", "/")}`
+			}`
+			: param === ""
+			? "/README.md"
+			: `/src/${param}`;
 
-		console.log(params)
-
-		if (import.meta.env.DEV) {
-			filePath = params["_splat"] !== ""
-				? `/src/${params["_splat"]}`
-				: `/README.md`;
-		}
-
-		if (import.meta.env.PROD) {
-			console.log(params)
-			let path = params["_splat"] === 'awesome-js-resources' ? '' : params["_splat"]
-			console.log(path)
-			const baseURL =
-				"https://raw.githubusercontent.com/rjoydip/awesome-js-resources/refs/heads/main";
-			filePath = path !== ""
-				? `${baseURL}/src/${path}`
-				: `${baseURL}/README.md`;
-		}
+		console.log(">>>> [filePath]: ", filePath);
 
 		try {
 			if (filePath) {
@@ -134,7 +129,7 @@ const indexRoute = createRoute({
 		}
 	},
 	errorComponent: ErrorComponent,
-	component: function Index() {
+	component: function () {
 		const { content, filePath } = indexRoute.useLoaderData();
 		return <Renderer content={content} filePath={filePath} />;
 	},
