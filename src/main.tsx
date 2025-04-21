@@ -142,19 +142,7 @@ const indexRoute = createRoute({
 	},
 });
 
-const exampleRoute = createRoute({
-	getParentRoute: () => rootRoute,
-	path: "examples/*",
-	loader: async ({ params }: any) => {
-		return { content: params };
-	},
-	component: function () {
-		const { content } = exampleRoute.useLoaderData();
-		return <h1>Hello, {JSON.stringify(content, null, 2)}</h1>
-	}
-});
-
-const routeTree = rootRoute.addChildren([indexRoute, exampleRoute]);
+const routeTree = rootRoute.addChildren([indexRoute]);
 
 const router = createRouter({
 	routeTree,
