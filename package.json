@@ -19,10 +19,7 @@
     "remark-gemoji": "^8.0.0",
     "remark-gfm": "^4.0.1",
     "remark-gh-alerts": "^0.0.3",
-    "remark-reference-links": "^7.0.0",
-    "shiki": "^3.2.2",
-    "unified": "^11.0.5",
-    "unist-util-visit": "^5.0.0"
+    "shiki": "^3.2.2"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.10.1",
